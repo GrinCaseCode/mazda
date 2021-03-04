@@ -526,3 +526,96 @@ p {
 .tab-pane:first-child {
 	display: block;
 }
+.banner {
+	padding: 80px 0;
+	text-align: right;
+	color: #fff;
+	background-image: url(../img/mazda_bodyandchassis_dark.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner__title {
+	font-size: 22px;
+	margin-bottom: 14px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.btn-gray {
+	text-transform: uppercase;
+	border: 2px solid #999999;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 10px 35px;
+	color: #101010;
+	display: inline-block;
+	background-color: #999999;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+.btn-gray:hover {
+	border: 2px solid #ffffff;
+	color: #101010;
+	background-color: #ffffff;
+}
+.banner__wrap {
+	display: flex;
+	justify-content: flex-end;
+}
+.banner__content {
+	max-width: 540px;
+}
+.banner p {
+	margin-bottom: 35px;
+}
+.item-offer__image img {
+	max-width: 100%;
+	margin: 0 auto;
+	height: auto;
+	display: block;
+}
+.item-offer__image {
+	margin-bottom: 35px;
+}
+.item-offer {
+	margin-top: 30px;
+	text-align: center;
+}
+.item-offer__name {
+	    font-size: 18px;
+	    margin-bottom: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.link-gray {
+	    color: #999999;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #999999;
+    text-transform: uppercase;
+	display: inline-block;
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.link-gray:hover {
+    color: #101010;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #101010;
+    text-decoration: none;
+}
+.item-offer p {
+	margin-bottom: 10px;
+}
+.offers {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+.title-input {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
