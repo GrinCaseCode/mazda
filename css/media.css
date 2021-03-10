@@ -7,6 +7,9 @@
 	    background-color: #101010;
 	display: none;
 }
+.nav.active {
+	display: block;
+}
 .header__right .phone-item {
 	display: none;
 }
@@ -68,11 +71,14 @@
         transition: all 0.3s;
         opacity: 0;
 }
-.menu > li.menu__haschild > a.active::after {
+.menu > li.menu__haschild.active > a::after {
 	opacity: 0;
 }
-.menu > li.menu__haschild > a.active::before {
+.menu > li.menu__haschild.active > a::before {
 	opacity: 1;
+}
+.menu > li.menu__haschild.active .menu-dropdown {
+	display: block;
 }
 }
 
@@ -122,7 +128,7 @@
 .tab-content {
 	display: none;
 }
-.tab-pane:first-child .tab-content {
+.tab-content.active {
 	display: block;
 }
 .tab-mob {
@@ -140,6 +146,94 @@
 	padding: 30px 15px;
 	background-color: #fff;
 }
+.links-tabs {
+	margin-bottom: 50px;
+	flex-direction: column;
+}
+.links-tabs li {
+	margin-bottom: 15px;
+}
+.sidebar-banner {
+	margin-bottom: 25px;
+}
+.item-catalog {
+	display: block;
+}
+.item-catalog__image {
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.item-catalog__price {
+	position: absolute;
+	top: -65px;
+	order: -1;
+	z-index: 2;
+	right: 0;
+}
+.item-catalog__features {
+	display: block;
+}
+.item-catalog__feature {
+	margin: 0;
+	    padding-bottom: 15px;
+    margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	    border-bottom: 1px solid #ddd !important;
+	border-right: none;
+}
+.item-catalog__descr {
+	font-size: 14px;
+	text-transform: none;
+}
+.item-catalog__value {
+	font-size: 16px;
+	padding-left: 5px;
+	margin: 0;
+}
+.item-catalog__stock {
+	padding: 8px 10px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.item-catalog__stock span {
+	margin-top: 1px;
+	margin-right: 4px;
+}
+.item-catalog__header {
+	flex-wrap: wrap;
+	position: relative;
+}
+.item-catalog__name {
+	display: block;
+	width: 100%;
+}
+.sorting-catalog__left span {
+	display: none;
+}
+.wrap-catalog_grid .item-catalog {
+	width: 100%;
+}
+.wrap-catalog_grid .item-catalog__features {
+	display: flex;
+}
+.wrap-catalog_grid .item-catalog__feature {
+	padding-bottom: 0;
+	border: none !important;
+}
+.wrap-catalog_grid .item-catalog__feature i {
+	top: 3px;
+}
+.wrap-catalog_grid .item-catalog__price {
+	position: relative;
+	top: 0;
+	order: 2;
+}
+.wrap-catalog_grid  .item-catalog__header {
+flex-wrap: nowrap;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -148,7 +242,7 @@
     max-width: 285px;
 } 
 }
-
+ 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
